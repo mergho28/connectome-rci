@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "connectome-rci"
+version = "0.1.0"
+description = "Global conductance and the Route Concordance Index (RCI) from a brain connectome"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Merit Ghodrat" }]
+keywords = ["connectome", "diffusion MRI", "graph", "Alzheimer", "biomarker", "tractography"]
+dependencies = [
+    "numpy>=1.24",
+    "networkx>=3.1",
+]
+
+[project.optional-dependencies]
+dsi = ["scipy>=1.10"]   # DSI Studio .connectivity.mat loader
+test = ["pytest>=7.0", "scipy>=1.10"]
+
+[project.scripts]
+connectome-rci = "connectome_rci.cli:main"
+
+[project.urls]
+"Paper" = "https://example.com/PAPER_LINK_TBD"
+"Source" = "https://github.com/mergho28/connectome-rci"
+
+[tool.setuptools.packages.find]
+where = ["src"]

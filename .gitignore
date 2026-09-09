@@ -1,0 +1,19 @@
+# Build / packaging
+build/
+dist/
+*.egg-info/
+src/*.egg-info/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Environments
+.venv*/
+venv/
+
+# Generated example data / fitted weights (users regenerate these)
+examples/data/
+*.pkl
+
+# OS
+.DS_Store
