@@ -63,7 +63,7 @@ atlas or ordering.
 
 ## Output
 
-- `global_conductance(...)` → a single float (the summed Kirchhoff effective conductance).
+- `global_conductance(...)` → a single float (the mean Kirchhoff effective conductance over the source–target pairs, matching the paper's biomarker).
 - `score(W, routes)` → `(y_fidelity, rci)`: a per-pair fidelity vector and the scalar **RCI** (its
   mean). Higher = more cognitively-normal-like.
 

@@ -6,8 +6,9 @@ No training required — this is a purely structural metric.
   L+  = pinv(L)             (Moore-Penrose pseudoinverse)
   C(s,t) = 1 / (L+[s,s] + L+[t,t] - 2*L+[s,t])   (effective conductance)
 
-The scalar "global conductance" is the sum of C(s,t) over the source->target
-pairs (NaN for disconnected pairs, ignored in the sum).
+The scalar "global conductance" is the mean of C(s,t) over the source->target
+pairs (NaN for disconnected pairs, ignored in the mean), matching the paper's
+`cond_mean` biomarker.
 """
 from __future__ import annotations
 
@@ -44,7 +45,7 @@ def compute_effective_conductance(
             r_eff = Lp[s, s] + Lp[t, t] - 2.0 * Lp[s, t]
             if r_eff > EPS:
                 cond[si, t] = 1.0 / r_eff
-    return cond, float(np.nansum(cond))
+    return cond, float(np.nanmean(cond))
 
 
 def effective_conductance(

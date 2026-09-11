@@ -27,7 +27,7 @@ def test_series():
     cond, total = compute_effective_conductance(G, sources=[0])
     assert np.isclose(cond[0, 1], 2.0)
     assert np.isclose(cond[0, 2], 1.0)
-    assert np.isclose(total, 3.0)
+    assert np.isclose(total, 1.5)  # mean of the two defined pairs (2.0, 1.0)
 
 
 def test_parallel():
