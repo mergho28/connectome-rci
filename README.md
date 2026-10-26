@@ -2,14 +2,15 @@
 
 Compute **global conductance** and the **Route Concordance Index (RCI)** from a brain connectome.
 
-Two diffusion-MRI graph metrics from the paper _"Structural white-matter routing as an early biomarker
-of Alzheimer's disease"_ (link TBD): a training-free graph-Laplacian **global conductance**, and a
+Two diffusion-MRI graph metrics from the paper _"A digital biomarker of white-matter routing from
+diffusion MRI as an early biomarker of Alzheimer's disease"_
+([medRxiv, doi:10.64898/2026.10.21.26366165](https://doi.org/10.64898/2026.10.21.26366165)): a training-free graph-Laplacian **global conductance**, and a
 per-route Naive-Bayes **RCI** that scores how closely a subject's white-matter routing matches a
 cognitively-normal reference.
 
 > Works with connectomes from **any** tractography pipeline (MRtrix3, QSIPrep, DSI Studio, Camino, …).
 > **This repository:** <https://github.com/mergho28/connectome-rci>
-> **Paper:** _link TBD._ • **Reproducibility repo:** <https://github.com/mergho28/rci-alzheimers-analysis>
+> **Paper (medRxiv preprint):** <https://doi.org/10.64898/2026.10.21.26366165> • **Reproducibility repo:** <https://github.com/mergho28/rci-alzheimers-analysis>
 
 ## Install
 
@@ -89,11 +90,14 @@ If you use `connectome-rci`, please cite:
 
 ```bibtex
 @article{ghodrat2026rci,
-  title   = {Structural white-matter routing from diffusion MRI as an early
-             biomarker of Alzheimer's disease},
-  author  = {Ghodrat, Merit and Schlachetzki, Johannes},
-  journal = {Manuscript in preparation},
-  year    = {2026}
+  title   = {A digital biomarker of white-matter routing from diffusion MRI as an
+             early biomarker of Alzheimer's disease},
+  author  = {Ghodrat, Merit and Schlachetzki, Johannes C. M.},
+  journal = {medRxiv},
+  year    = {2026},
+  doi     = {10.64898/2026.10.21.26366165},
+  url     = {https://doi.org/10.64898/2026.10.21.26366165},
+  note    = {Preprint}
 }
 ```
 
