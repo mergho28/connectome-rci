@@ -10,7 +10,7 @@ cognitively-normal reference.
 
 > Works with connectomes from **any** tractography pipeline (MRtrix3, QSIPrep, DSI Studio, Camino, …).
 > **This repository:** <https://github.com/mergho28/connectome-rci>
-> **Paper (medRxiv preprint):** <https://doi.org/10.64898/2026.10.21.26366165> • **Reproducibility repo:** <https://github.com/mergho28/rci-alzheimers-analysis>
+> **Paper (medRxiv preprint):** <https://doi.org/10.64898/2026.10.21.26366165>
 
 ## Install
 
